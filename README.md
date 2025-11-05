@@ -1,5 +1,5 @@
 # MMM-MealSuggestions
-**MagicMirror** module that suggests 6 random recipes (3 for lunch and 3 for dinner) to choose from.
+**MagicMirror²** module that suggests 6 random recipes (3 for lunch and 3 for dinner) to choose from.
 It utlizes the [Spoonacular](https://spoonacular.com/food-api) API as well as a local json db for personal/family favorites that may not be online.
 
 ## Screenshot
@@ -70,10 +70,14 @@ The following properties can be configured:
 |--- | --- | --- |
 | `apiKey` | `""` | *Your* Spoonacular API key (required for online recipes) |
 | `tags` | `""` | Comma-separated recipe tags for filtering (optional). see [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of possible tags. |
-| `excludeIngredients` | `""` | Comma-separated ingredients to exclude for filtering (optional). [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of ingredients. |
+| `excludeIngredients` | `""` | Comma-separated ingredients to exclude for filtering (optional). see [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of ingredients. |
 | `diet` | `""` | Comma-separated diet types for filtering (optional). See [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of possible diets |
 | `type` | `""` | Comma-separated Meal Types for filtering (optional). See [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of possible types.
 | `refreshInterval` | `0` | Interval in milliseconds for auto-refresh (optional, if you are using the free API plan, it's best to leave this set to 0 so as not to exceed your quota) |
 | `useLocalBackup` | `true` | `true` will use the `~/MagicMirror/modules/MMM-MealSuggestions/recipes.json` file for your personal/family recipes when there is an issuue connecting to the API endpoint. `false` will only use Spoonacular. |
 | `hybridMode` | `false` | if `true` you will see a mix of both local and Spoonacular recipes. if `false` only Spoonacular will be shown, unless there is a network error, or you've reached your API call quota |
 | `localRecipeCount` | `3` | how many local recipes to use in hybrid mode |
+## Credits
+Inspired by [MagicMirror²](https://github.com/MichMich/MagicMirror) and powered by the [Spoonacular API](https://spoonacular.com/food-api).
+## License
+MIT License © Dancey Apple 2025
