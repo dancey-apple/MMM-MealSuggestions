@@ -12,13 +12,13 @@ You'll need to set up an (free) account at [Spoonacular](https://spoonacular.com
 ## Installation
 To install the module, clone the repository into the `~/MagicMirror/modules/` directory:
 ```bash
-cd ~/MagicMirror/mdules/
+cd ~/MagicMirror/modules/
 git clone https://github.com/dancey-apple/MMM-MealSuggestions
 ```
 ## Configuration
 ### MagicMirror config.js:
 Add the module to the modules array in the `config/config.js` file:
-```json
+```javascript
 {
     module: "MMM-MealSuggestions",
     position: "bottom_right", // or choose any position you like
@@ -26,17 +26,17 @@ Add the module to the modules array in the `config/config.js` file:
         apiKey: "YOUR_SPOONACULAR_API_KEY", // required if you are using Spoonacular
         tags: "kid-friendly,dinner", // optional tags. 
         excludeIngredients: "fish,pork,onions", // optional exclusions. 
-        diet: "vegan, vegitarian" // optional diet filters
-        type: "breakfast, desert" // optional meal type filters
-        refreshInterval: 0 // 0 disables auto-refresh and will only update if the button is clicked
+        diet: "vegan, vegetarian", // optional diet filters
+        type: "breakfast, dessert", // optional meal type filters
+        refreshInterval: 0, // 0 disables auto-refresh and will only update if the button is clicked
         useLocalBackup: true, // fallback or hybrid toggle
         hybridMode: false, // if true, mixes local and Spoonacular recipes
-        localRecipeCount: 3, // how many local recipes to use in hybrid mode
+        localRecipeCount: 3 // how many local recipes to use in hybrid mode
     }
 }
 ```
 ### recipes.json:
-You'll need to add your own images to the `~MagicMirror/modules/MMM-MealSuggestions/images/` folder and reference them here for images to show.
+You'll need to add your own images to the `~/MagicMirror/modules/MMM-MealSuggestions/images/` folder and reference them here for images to show.
 ```json
 {
   "recipes": [
@@ -59,9 +59,9 @@ You'll need to add your own images to the `~MagicMirror/modules/MMM-MealSuggesti
 }
 ```
 ## Update
-To update the module, go to the module directory, pull the latest chages:
+To update the module, go to the module directory, pull the latest changes:
 ```bash
-cd ~/MagicMirror/modules/MMM-MealSugestions
+cd ~/MagicMirror/modules/MMM-MealSuggestions
 git pull
 ```
 ## Configuration Options
@@ -74,6 +74,6 @@ The following properties can be configured:
 | `diet` | `""` | Comma-separated diet types for filtering (optional). See [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of possible diets |
 | `type` | `""` | Comma-separated Meal Types for filtering (optional). See [Spoonacular Docs](https://spoonacular.com/food-api/docs#Search-Recipes-Complex) for a list of possible types.
 | `refreshInterval` | `0` | Interval in milliseconds for auto-refresh (optional, if you are using the free API plan, it's best to leave this set to 0 so as not to exceed your quota) |
-| `useLocalBackup` | `true` | `true` will use the `~/MagicMirror/modules/MMM-MealSuggetions/recipes.json` file for your personal/family recipes when there is an issuue connecting to the API endpoint. `false` will only use Spoonacular. |
+| `useLocalBackup` | `true` | `true` will use the `~/MagicMirror/modules/MMM-MealSuggestions/recipes.json` file for your personal/family recipes when there is an issuue connecting to the API endpoint. `false` will only use Spoonacular. |
 | `hybridMode` | `false` | if `true` you will see a mix of both local and Spoonacular recipes. if `false` only Spoonacular will be shown, unless there is a network error, or you've reached your API call quota |
 | `localRecipeCount` | `3` | how many local recipes to use in hybrid mode |
