@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Meal Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 class="header">Daily Meal Suggestions</h1>
+        <div id="meal-suggestions-lunch">
+            <div id="lunch-container">
+                <h2 class="header">Lunch Options</h2>
+                <div id="lunch-recipes" class="recipes-grid">
+                    <div id="lunch-0"></div>
+                    <div id="lunch-1"></div>
+                    <div id="lunch-2"></div>
+                </div>
+            </div>
+        </div>
+        <div id="meal-suggestions-dinner">
+            <div id="dinner-container">
+                <h2 class="header">Dinner Options</h2>
+                <div id="dinner-recipes" class="recipes-grid">
+                    <div id="dinner-0"></div>
+                    <div id="dinner-1"></div>
+                    <div id="dinner-2"></div>
+                </div>
+            </div>
+        </div>
+        <div id="refresh-button-container" class="recipes-grid">
+            <button id="refresh-meals">Refresh Suggestions</button>
+        </div>
+        <div id="quota-reset-time" class="info">API Call Quoata (50) resets at 6:00pm CST 5:00 CDST</div>
+        <script src="meal-suggestions.js"></script>
+    </main>
+</body>
+</html>

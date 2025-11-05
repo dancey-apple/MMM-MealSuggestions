@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "title": "Grilled Chicken Wrap",
+      "summary": "A simple and delicious grilled chicken wrap with lettuce, tomato, and ranch dressing.",
+      "sourceUrl": "https://example.com/grilled-chicken-wrap"
+    },
+    {
+      "title": "Pasta Primavera",
+      "summary": "A light pasta dish packed with colorful vegetables and a hint of parmesan.",
+      "sourceUrl": "https://example.com/pasta-primavera"
+    },
+    {
+      "title": "Turkey Quesadilla",
+      "summary": "A cheesy turkey quesadilla with a crispy tortilla shell and salsa on the side.",
+      "sourceUrl": "https://example.com/turkey-quesadilla"
+    }
+  ]
+}
