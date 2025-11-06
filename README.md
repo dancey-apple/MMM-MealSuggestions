@@ -76,7 +76,7 @@ The following properties can be configured:
 | `refreshInterval` | `0` | Interval in milliseconds for auto-refresh (optional, if you are using the free API plan, it's best to leave this set to 0 so as not to exceed your quota) |
 | `useLocalBackup` | `true` | `true` will use the `~/MagicMirror/modules/MMM-MealSuggestions/recipes.json` file for your personal/family recipes when there is an issuue connecting to the API endpoint. `false` will only use Spoonacular. |
 | `hybridMode` | `false` | if `true` you will see a mix of both local and Spoonacular recipes. if `false` only Spoonacular will be shown, unless there is a network error, or you've reached your API call quota |
-| `localRecipeCount` | `3` | how many local recipes to use in hybrid mode |
+| `localRecipeCount` | `1` | how many local recipes to use in hybrid mode |
 ## Credits
 Inspired by [MagicMirror²](https://github.com/MichMich/MagicMirror) and powered by the [Spoonacular API](https://spoonacular.com/food-api).
 ## License

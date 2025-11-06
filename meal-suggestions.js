@@ -1,9 +1,9 @@
 // === MMM-MealSuggestions.js ===
 // API Key (replace with your own or move to MagicMirror config)
 const config = {
-    apiKey: "87cfc66de7974962a5833c7fc001f12c", // replace with your own
+    apiKey: "YOUR_API_KEY_HERE", // replace with your own
     useLocalBackup: true, // fallback toggle
-    hybridMode: true, // mix local + API recipes
+    hybridMode: false, // mix local + API recipes
     localFile: "recipes.json", // local JSON file path
     count: 3, // how many recipes per meal type
     localRecipeCount: 1, // how many local recipes to use in hybrid
