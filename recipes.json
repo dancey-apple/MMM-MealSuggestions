@@ -1,19 +1,32 @@
 {
   "recipes": [
     {
-      "title": "Grilled Chicken Wrap",
-      "summary": "A simple and delicious grilled chicken wrap with lettuce, tomato, and ranch dressing.",
-      "image": "modules/MMM-MealSuggestions/images/grilled-chicken-wrap.jpg"
+      "title": "Pepperoni Spaghetti",
+      "summary": "Spaghetti with grilled pepperoni, grape tomatoes, olive oil, and Italian herbs.",
+      "image": "images/pepperoni-spaghetti.png",
+      "readyInMinutes": 25,
+      "source": "Family Fave"
     },
     {
-      "title": "Pasta Primavera",
-      "summary": "A light pasta dish packed with colorful vegetables and a hint of parmesan.",
-      "image": "modules/MMM-MealSuggestions/images/pasta-primavera.jpg"
+      "title": "Potato & Sausage Sheet Pan",
+      "summary": "Sheet pan dinner with roasted potatoes, sausage, broccoli, and onions.",
+      "image": "images/potato-sausage-sheet-pan.png",
+      "readyInMinutes": 90,
+      "source": "Family Fave"
     },
     {
-      "title": "Turkey Quesadilla",
-      "summary": "A cheesy turkey quesadilla with a crispy tortilla shell and salsa on the side.",
-      "image": "modules/MMM-MealSuggestions/images/turkey-quesadilla.jpg"
+      "title": "Coffee Cake",
+      "summary": "Old world style coffee cake with a cinnamon sugar topping.",
+      "image": "images/coffee-cake.png",
+      "readyInMinutes": 60,
+      "source": "Family Fave"
+    },
+    {
+      "title": "Pinapple Chicken",
+      "summary": "Baked chicken breasts with pineapple slices and a sweet glaze.Served with rice.",
+      "image": "images/pineapple-chicken.png",
+      "readyInMinutes": 60,
+      "source": "Family Fave"
     }
   ]
 }
